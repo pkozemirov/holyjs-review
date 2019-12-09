@@ -1,49 +1,246 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+	<title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<style>
+	img.small {
+		max-height: 400px !important;
+	}
+
+	.noborder {
+		background-color: transparent !important;
+		border: none !important;
+	}
+</style>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<!-- Вступление -->
+			<section>
+				<img class="noborder" src="src/logo2019msk.svg" />
+			</section>
+
+			<!-- Площадка -->
+			<section>
+				<section>
+					<p>Площадка</p>
+				</section>
+				<section>
+					<img src="src/place1.jpg" />
+				</section>
+				<section>
+					<img src="src/place3.jpg" />
+				</section>
+				<section>
+					<img src="src/place2.jpg" />
+				</section>
+			</section>
+
+			<!-- Стенд Kaspersky -->
+			<section>
+				<section>
+					<img src="src/stand2.jpg" />
+				</section>
+				<section>
+					<img src="src/stand1.jpg" />
+				</section>
+			</section>
+
+			<!-- Вступление к докладам -->
+			<section>
+				<p>Доклады</p>
+			</section>
+
+			<!-- Павел Черторогов -->
+			<section>
+				<section>
+					<p>Павел Черторогов</p>
+					<img class="small" src="src/pavel1.jpg" />
+					<P>&laquo;GraphQL-фрагменты на клиенте: История появления, ошибки использования&raquo;</P>
+				</section>
+				<section>
+					<img src="src/pavel2.png" />
+				</section>
+				<section>
+					<img src="src/pavel3.png" />
+				</section>
+				<section>
+					Основное:
+					<ul>
+						<li class="fragment" data-fragment-index="0">Подробный разбор типов gql-моделей</li>
+						<li class="fragment" data-fragment-index="1">Как facebook пришёл к Fragment Model (через Response Model,
+							Type Model и JSON
+							Model)</li>
+						<li class="fragment" data-fragment-index="2">Как разрабатывать большое приложение в распределённой команде,
+							не ломая чужой
+							код</li>
+					</ul>
+				</section>
+				<section>
+					<img src="src/pavel4.png" />
+				</section>
+			</section>
+
+			<!-- Елиран -->
+			<section>
+				<section>
+					<p>Eliran Eliassy</p>
+					<img class="small" src="src/eliran2.jpg" />
+					<p>&laquo;Get ready for Ivy — Angular 3rd generation renderer engine&raquo;</p>
+				</section>
+				<section>
+					<img src="src/eliran3.png" />
+				</section>
+				<section>
+					<img src="src/eliran4.png" />
+				</section>
+				<section>
+					<img src="src/eliran5.png" />
+				</section>
+			</section>
+
+			<!-- Юлия -->
+			<section>
+				<section>
+					<p>Yulia Startsev</p>
+					<img class="small" src="src/yulia5.jpg" />
+					<p>From specification to implementation</p>
+				</section>
+				<section>
+					<img src="src/yulia2.png" />
+				</section>
+				<section>
+					<pre><code class="hljs javascript">
+  const foo = undefined ?? 'defined' // 'defined' 
+  const bar = null ?? 'not null' // 'not null'
+
+  const foo = 0 ?? x // 0
+  const bar = false ?? true // false
+					</code></pre>
+				</section>
+				<section>
+					<img src="src/yulia3.png" />
+				</section>
+				<section>
+					<img src="src/yulia4.png" />
+				</section>
+			</section>
+
+			<!-- Дмитрий Пацура -->
+			<section>
+				<section>
+					<p>Дмитрий Пацура</p>
+					<img class="small" src="src/patsura1.jpg" />
+					<p>Разработка компилятора для TypeScript на TypeScript на базе LLVM</p>
+				</section>
+				<section>
+					<img src="src/patsura2.png" />
+				</section>
+				<section>
+					<img src="src/patsura3.png" />
+				</section>
+				<section>
+					<img src="src/patsura4.png" />
+				</section>
+			</section>
+
+			<!-- Денис Радин -->
+			<section>
+				<section>
+					<p>Денис Радин</p>
+					<img class="small" src="src/radin.jpg" />
+					<p>Может ли компьютер молиться на благо всех живых существ</p>
+				</section>
+				<section>
+					<img src="src/radin2.png" />
+				</section>
+				<section>
+					<img src="src/radin3.png" />
+				</section>
+				<section>
+					<img src="src/radin4.png" />
+				</section>
+				<section>
+					<img src="src/radin5.png" />
+				</section>
+			</section>
+
+			<!-- Подробнее про стенд -->
+			<section>
+				<section>
+					<p>Подробнее про стенд</p>
+				</section>
+				<section>
+					<img class="small" src="src/bot1.jpg" />
+				</section>
+				<section>
+					<img class="small" src="src/bot2.png" />
+				</section>
+				<section>
+					<img src="src/bot3.png" />
+				</section>
+				<section>
+					<img src="src/stand3.jpg" />
+				</section>
+				<section>
+					<img src="src/bot4.png" />
+				</section>
+			</section>
+
+			<!-- Конец -->
+			<section>
+				<p>Спасибо!</p>
+			</section>
 		</div>
+	</div>
 
-		<script src="js/reveal.js"></script>
+	<script src="js/reveal.js"></script>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true }
-				]
-			});
-		</script>
-	</body>
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [{
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true
+				}
+			]
+		});
+	</script>
+</body>
+
 </html>
